@@ -1,4 +1,4 @@
-Rank,Country Code,Gold Medal,Silver Medal,Bronze Medal,Total,Country
+Rank,country_code,Gold_Medal,Silver_Medal,Bronze_Medal,Total,Country
 1,USA,39,41,33,113,United States of America
 2,CHN,38,32,18,88,People's Republic of China
 3,JPN,27,14,17,58,Japan
