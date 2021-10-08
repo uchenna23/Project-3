@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" >
+<html lang="en" style="height:100%">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,18 +8,18 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
    <!--CSS Link-->
-   <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+   <link rel="stylesheet" type="text/css" href="../static/styles.css">
 
     <title>2021 Olympics Data</title>
     <link rel="shortcut icon" type="image/jpg" href="../static/olympic_favicon.png"/>
   </head>
 
   <!-- Jumbotron Banner -->
-  <body class=background>
+  <body class="d-flex flex-column h-100">
+    <source media="(min-width: 768px)" srcset="https://media.cntraveler.com/photos/6048e81fe77f3d8c4d2e41de/16:9/w_120,c_limit/Tokyo-2021-GettyImages-1188789522-2.jpg 120w, https://media.cntraveler.com/photos/6048e81fe77f3d8c4d2e41de/16:9/w_240,c_limit/Tokyo-2021-GettyImages-1188789522-2.jpg 240w, https://media.cntraveler.com/photos/6048e81fe77f3d8c4d2e41de/16:9/w_320,c_limit/Tokyo-2021-GettyImages-1188789522-2.jpg 320w, https://media.cntraveler.com/photos/6048e81fe77f3d8c4d2e41de/16:9/w_640,c_limit/Tokyo-2021-GettyImages-1188789522-2.jpg 640w, https://media.cntraveler.com/photos/6048e81fe77f3d8c4d2e41de/16:9/w_960,c_limit/Tokyo-2021-GettyImages-1188789522-2.jpg 960w, https://media.cntraveler.com/photos/6048e81fe77f3d8c4d2e41de/16:9/w_1280,c_limit/Tokyo-2021-GettyImages-1188789522-2.jpg 1280w, https://media.cntraveler.com/photos/6048e81fe77f3d8c4d2e41de/16:9/w_1600,c_limit/Tokyo-2021-GettyImages-1188789522-2.jpg 1600w, https://media.cntraveler.com/photos/6048e81fe77f3d8c4d2e41de/16:9/w_1920,c_limit/Tokyo-2021-GettyImages-1188789522-2.jpg 1920w, https://media.cntraveler.com/photos/6048e81fe77f3d8c4d2e41de/16:9/w_2240,c_limit/Tokyo-2021-GettyImages-1188789522-2.jpg 2240w" sizes="100vw">
     <div class="jumbotron jumbotron-fluid" style="background-color: rgb(28, 37, 153); color: white; padding-top: 1px; padding-bottom: 2px; text-align: center;">
       <div class="container">
-        <h1 class="display-4"><img src="../static/olympic_logo.png" alt="logo" width="70" > 2021 Olympics</h1>
-        <p class="lead" style="text-align: center;">Click an icon below for a deep dive into the data</p>
+        <h1 class="display-4"><img src="../static/olympic_logo.png" alt="logo" width="100" > 2021 Olympics</h1>
       </div>
     </div>
 
@@ -30,10 +30,10 @@
 
         <div class="col-12 col-md-12 col-lg-6">
 
-          <div class="jumbotron jumbotron-fluid" style="color: rgb(151, 78, 78); margin-top: 17%; margin-left: 10%; margin-bottom: 11%; text-align: left;">
+          <div class="jumbotron jumbotron-fluid" style="color: rgb(255, 255, 255); margin-top: 5%; margin-left: 10%; margin-bottom: 11%; text-align: left;">
             <div class="container">
-              <h1 class="display-4">The Data Restaurateurs</h1>
-              <h4><i>Eating Good in your Neighborhood!</i></h4>
+              <h1 class="display-4">Olympic Games Data </h1>
+              <h4><i>Click an icon below to explore the data</i></h4>
             </div>
           </div>
 
@@ -44,53 +44,42 @@
         </div>
 
 
-      <div class="row">
+      <div class="row justify-content-md-center">
 
-    
 
-          <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-            <a style="text-decoration: none;" href="/restaurantfinder">
-              <h4 class="landing">Find Restaurants</h4>
+        <div class="col-6-center col-sm-6 col-md-3 col-lg-3">
+            <a style="text-decoration: none;" href="/athletes">
+              <h4 class="landing">Athletes</h4>
+            </a>
+            
+            <a href="/athletes">
+              <img class="panel" src="/static/athlete.png" alt = "athletes" >
+            </a>
+          </div>
+
+
+          <div class="col-6-center col-sm-6 col-md-3 col-lg-3">
+            <a style="text-decoration: none;" href="/medals">
+              <h4 class="landing">Medals</h4>
             </a>
              
-            <a href="restaurantfinder">
-              <img class="panel" src="/static/findarestaurant3.png" alt="Find a Restaurant">
+            <a href="/medals">
+              <img class="panel" src="/static/medal.png" alt="medals">
               
             </a>
           </div>
 
 
-          <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-            <a style="text-decoration: none;" href="/borocuisines">
-              <h4 class="landing">NYC Cuisines</h4>
+          <div class="col-6-center col-sm-6 col-md-3 col-lg-3">       
+            <a style="text-decoration: none;" href="/facts">
+              <h4 class="landing">Fun Facts</h4>
             </a>
             
-            <a href="/borocuisines">
-              <img class="panel" src="/static/nyccuisines3.png" alt = "Cuisines" >
-            </a>
-          </div>
-
-
-          <div class="col-6 col-sm-6 col-md-3 col-lg-3">       
-            <a style="text-decoration: none;" href="/violationdata">
-              <h4 class="landing">Restaurant Violations</h4>
-            </a>
-            
-            <a href="/violationdata">
-              <img class="panel" src="/static/violations3.png" alt="Violations">
+            <a href="/facts">
+              <img class="panel" src="/static/brain.png" alt="fun facts">
             </a>
 
           </div>
-
-
-          <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-            <a style="text-decoration: none;" href="/othergraphs">
-              <h4 class="landing">Food Fortune</h4>
-            </a>
-            
-            <a href="/othergraphs">
-              <img class="panel" src="/static/dice3.png" alt="Other" >
-            </a>
 
           </div>
 
@@ -102,8 +91,9 @@
 
     
     <!-- Copyright Information -->
-    <a style="text-decoration: none;" href="https://github.com/meetk5/Team-Project3"><p class="copyright">© 2021 The Data Restaurateurs</p></a>
-    <div>cons made by <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <!-- <div class="container footer navbar-fixed-bottom">
+        Icons made by <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div> -->
          
                
     <!-- JavaScript: Bootstrap Bundle with Popper -->

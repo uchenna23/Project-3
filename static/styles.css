@@ -9,7 +9,12 @@ body {
     /* background-color: #D4D4AA; */
     /* background-color: #fcec8e; */
     /* background-color: whitesmoke; */
-    background-color: white;
+    background-color:white;
+    background-image:url('https://myvalleynews.com/wp-content/uploads/2019/11/Olympics.jpeg');
+    /* alternate background image: https://media.cntraveler.com/photos/6048e81fe77f3d8c4d2e41de/16:9/w_1600,c_limit/Tokyo-2021-GettyImages-1188789522-2.jpg */
+    /* background-position:; */
+    background-size:1920px;
+
 }
 
 
@@ -69,8 +74,8 @@ IMG.panel {
     margin-right: auto;
     margin-bottom: 2%; 
     padding-top: 2%;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     z-index: 2;
     
 
@@ -96,6 +101,7 @@ body.background {
     background-color: brown;
     max-width: 100%;
     height: auto;
+    z-index: -1;
     
 }
 
