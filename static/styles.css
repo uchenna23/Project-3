@@ -28,12 +28,12 @@ body {
     background-color: #EBF5DF; 
     min-height: 500px;
 }
-/* h1 { */
+h1 {
     /* text-align: center; */
-    /* color:rgb(218, 152, 76); */
+    /* color:rgb(214, 176, 71); */
     /* background-color: black; */
-/* } */
-
+}
+    
 h3 {
     text-align: center;
 }
