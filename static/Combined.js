@@ -1,6 +1,8 @@
 // load json data
 d3.json("/clean_data/cleaned_athletes.json").then((data) => {
   // calculate the size of the object (# of rows)
+  
+  var config = {responsive: true}
 
   let size = 0;
 
@@ -74,9 +76,11 @@ d3.json("/clean_data/cleaned_athletes.json").then((data) => {
       title: "Participation by Gender",
       height: 600,
       width: 800,
+      xaxis: { autorange: true},
+      yaxis: { autorange: true},
     };
 
-    Plotly.newPlot("plot", chart_data, layout);
+    Plotly.newPlot("plot", chart_data, layout, config);
    
     // get unique discipline
 
@@ -176,7 +180,7 @@ d3.json("/clean_data/cleaned_athletes.json").then((data) => {
         height: 380,
     };
 
-    Plotly.newPlot("bar", data2, layout2);
+    Plotly.newPlot("bar", data2, layout2, config);
   
   };
 
