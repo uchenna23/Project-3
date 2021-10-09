@@ -105,18 +105,6 @@ d3.json("/clean_data/cleaned_athletes.json").then((data) => {
 
       let number = 0
 
-      // for (key in data) {
-      //   if (!country) {
-      //       if (data[key].discipline === selected_discipline) {
-      //         number++
-      //       } else {}
-      //   } else {
-      //     if (data[key].discipline === selected_discipline && data[key].country === country) {
-      //       number++
-      //     } else {}
-      //   }
-      // };
-
         for (key in data) {
           if (!country && data[key].discipline === selected_discipline) {
             number++;
@@ -183,7 +171,7 @@ d3.json("/clean_data/cleaned_athletes.json").then((data) => {
     var layout2 = {
         title: bar_title,
         xaxis: { autorange: true},
-        yaxis: { autorange: "reversed"},
+        yaxis: { autorange: "reversed", padding: 100},
         margin: { t: 70, l: 100 },
         height: 380,
     };
