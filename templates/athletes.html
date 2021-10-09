@@ -13,18 +13,19 @@
   <!-- Styles CSS -->
   <link rel="stylesheet" href="../static/styles.css">
 
+  <!-- Plotly -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
   <title>Athletes</title>
   <link rel="shortcut icon" type="image/jpg" href="../static/olympic_favicon.png" />
 </head>
 
 <body>
 
-  <body>
-
-
     <!-- Navbar  -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(28, 37, 153);">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: rgb(28, 37, 153);">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img src="../static/olympic_logo.png" alt="" width="35">
@@ -55,49 +56,80 @@
     </nav>
 
 
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 jumbotron text-center">
-          <h1>Athletes</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="well">
-            <h4>VISUAL 1 TITLE</h4>
+    <!-- PAGE TITLE -->
+    <div>
+      
+        <style>
+        /* Container holding the image and the text */
+        .container {
+        position: relative;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px rgb(158, 168, 175);
+        } 
+  
+        /* Centered text */
+        .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+        </style>  
+  
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 jumbotron text-center">
+                      <img src="/static/athlete.png" alt="fun facts" width="150">
+                      <h1 class="centered" style="font-size:4rem; color:black">Athletes</h1>
+                  </div>
+              </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div id="pie"></div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div id="borochart"></div>
-        </div>
+    </div>
+  
+  <!-- BREAK -->
+  <br><br>
 
-      <script src="https://d3js.org/d3.v5.min.js"></script>
-      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-      <script src="../static/js/Boro1.js"></script>
-      <script src="../static/js/Boro2.js"></script>
-      <div class="container">
+    <div>
 
-      </div>
+        <!-- STYLING FOR VISUALIZATION NAME -->
+        <div class="container-fluid">
+            <div class="row">
 
+                <style>
+                    h3 {
+                        text-align: center;
+                        /* font-family: 'Segoe UI', cursive; */
+                        font-size: 3rem;
+                        padding-bottom: 0.2em;
+                    }
+                
+                </style>
+                
+                <h3 style="color:rgb(28, 37, 153);">Learn about Participation by Gender and Discipline</h3>
+                
+                <div class="dropdownWrapper">
+                    <select id="selectCountry">
+                    <option value="">Choose a country you would like to learn more:</option>
+                    </select>
+                </div>
+                <div id="plot"></div>   
+                <div id="bar"></div> 
+                <script src="https://d3js.org/d3.v5.min.js"></script>
+                <script src="../static/Combined.js"></script>
 
+            </div>
+        </div>  
 
-
-
-
-      <!-- JavaScript: Bootstrap Bundle with Popper -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
-
-
-  </body>
-
+    </div>   
+  
+        <!-- JavaScript: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+          crossorigin="anonymous">
+        </script>
+  
+  
+</body>
+  
 </html>
