@@ -74,10 +74,6 @@ d3.json("/clean_data/cleaned_athletes.json").then((data) => {
 
     let layout = {
       title: "Participation by Gender",
-      height: 600,
-      width: 800,
-      xaxis: { autorange: true},
-      yaxis: { autorange: true},
     };
 
     Plotly.newPlot("plot", chart_data, layout, config);
@@ -177,7 +173,6 @@ d3.json("/clean_data/cleaned_athletes.json").then((data) => {
         xaxis: { autorange: true},
         yaxis: { autorange: "reversed", padding: 100},
         margin: { t: 70, l: 100 },
-        height: 380,
     };
 
     Plotly.newPlot("bar", data2, layout2, config);
