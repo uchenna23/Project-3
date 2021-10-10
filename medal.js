@@ -2,6 +2,8 @@
 d3.json("/clean_data/cleaned_medal_total.json").then((data) => {
     // calculate the size of the object (# of rows)
   
+    var config = {responsive: true}
+
     let country_arr = [];
     let rank_arr = [];
     let gold_arr = [];
@@ -58,6 +60,6 @@ d3.json("/clean_data/cleaned_medal_total.json").then((data) => {
         margin: { t: 70, l: 180 }
         };
       
-      Plotly.newPlot('Medal_Stacked', data, layout);
+      Plotly.newPlot('Medal_Stacked', data, layout, config);
 
 });
