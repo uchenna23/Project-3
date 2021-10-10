@@ -9,7 +9,7 @@ Our data comes from a kaggle data set that included athletes, coaches, medals an
 
 This would be useful to sports analysts, Olympic historians and hobbyists and even athlete's by having a place to check Olympic related information. This would also be helpful to the casual Olympic fan who weren't in a place to watch the Olympics due to lower coverage because of the pandemic.
 
-Dashboard Link: [Link](PUT GITHUB PAGES LINK HERE)
+[2021 Olympic Dashboard](PUT GITHUB PAGES LINK HERE)
 
 ## Technologies: :1st_place_medal:	
 - Python
