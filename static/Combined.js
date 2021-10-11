@@ -1,5 +1,5 @@
 // load json data
-d3.json("/clean_data/cleaned_athletes.json").then((data) => {
+d3.json("./clean_data/cleaned_athletes.json").then((data) => {
   // calculate the size of the object (# of rows)
   
   var config = {responsive: true}

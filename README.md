@@ -1,6 +1,6 @@
 # 2021 Tokyo Olympics :medal_sports:
 
-![alt text](https://github.com/uchenna23/Project-3/blob/main/images/Olympics.jpg?raw=true)
+![alt text](https://github.com/uchenna23/Project-3/blob/main/static/Olympics.jpg?raw=true)
 
 ## About our project:
 The 2020 Olympic tournament was delayed one year due to the unforgivable Covid-19 pandemic. With this looming around the Olympic games, many around the world were not able to fully experience the sacred event which comes every four years. With this in mind, we created an interactive dashboard to help inform the end user about the competition including gender participation and medal information for each discipline and event. From there, we deployed our dashboard on GitHub pages.
@@ -9,13 +9,12 @@ Our data comes from a kaggle data set that included athletes, coaches, medals an
 
 This would be useful to sports analysts, Olympic historians and hobbyists and even athlete's by having a place to check Olympic related information. This would also be helpful to the casual Olympic fan who weren't in a place to watch the Olympics due to lower coverage because of the pandemic.
 
-[2021 Olympic Dashboard](PUT GITHUB PAGES LINK HERE)
+__Click here to view site:__ [2021 Olympic Dashboard](https://uchenna23.github.io/Project-3/)
 
 ## Technologies: :1st_place_medal:	
 - Python
 - PostgreSQL
-- Javascript
-- D3
+- Javascript (D3, Plotly, Flip.min)
 - HTML/Bootstrap/CSS
 - GitHub Pages
 
@@ -33,7 +32,7 @@ This would be useful to sports analysts, Olympic historians and hobbyists and ev
 - A heatmap of the type the numbers of medals won by each country
 
 ## Data Sources:
-This is an Olympic Games dataset that describes medals and athletes for Tokyo 2020. The data was created from Tokyo Olympics. We used the athletes.csv, medals.csv and medals_total.csv.
+This is an Olympic Games dataset that describes medals and athletes for Tokyo 2020. The data was created from Tokyo Olympics. We used the athletes.csv (11657 rows), medals.csv (2402 rows) and medals_total.csv (94 rows).
 
 - [Tokyo 2020 Olympics](https://www.kaggle.com/piterfm/tokyo-2020-olympics)
 
