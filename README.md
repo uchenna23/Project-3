@@ -42,6 +42,6 @@ This is an Olympic Games dataset that describes medals and athletes for Tokyo 20
 ## Contributors: :trophy:
 
 - [Bradley Barker](https://github.com/brbbrb)
-- [Darryl Connelly II](https://github.com/Connelito)
+- [Darryl Connelly II](https://github.com/DConnellyII)
 - [Uchenna Nwagbara](https://github.com/uchenna23)
 - [Yingying Li](https://github.com/Yingying-Li-Data)
